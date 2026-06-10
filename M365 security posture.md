@@ -1,4 +1,4 @@
-# Hybrid Identity Security Hardening Project
+# Securing Hybrid Identity: An End-to-End Microsoft 365 and Entra ID Security Implementation
 
 ## Design and Implementation of a Hybrid Identity Security Architecture across On-Premise Active Directory, Microsoft Entra ID, and Microsoft 365
 
@@ -6,10 +6,10 @@
 
 | Field | Detail |
 |---|---|
-| Author | Dumanyie Dornubari Chamberlain (Freedom) |
-| Role framing | M365 Security Engineer |
+| Author | Dumanyie Dornubari Chamberlain  |
+| Role  | M365 Security Engineer |
 | Project discipline | Hybrid Identity and Access Management Security |
-| Environment | Representative Project (non-production) |
+| Environment | Representative experience (non-production) |
 | Version | 2.0 (implemented build with evidence) |
 | Date | June 2026 |
 
@@ -151,7 +151,7 @@ Install-ADDSForest `
 
 **What each part does.** `Install-WindowsFeature` adds the directory-service software. `Install-ADDSForest` builds a new forest and domain, installs DNS (which Active Directory depends on to locate its services), and prompts for a DSRM recovery password. The server reboots automatically when promotion completes.
 
-![Figure 7: Installing the AD DS role (installation in progress)](https://raw.githubusercontent.com/D-rank-developer/M365-Security-Project-cloud-and-on-prem-platform/bff4ed3641371c5945beab34af8e9e4c9cd5d7cb/M365%20resources/image7.png)
+![Figure 7: Installing the AD DS role (installation in progress)](https://github.com/D-rank-developer/M365-Security-Project-cloud-and-on-prem-platform/blob/c012d66fdd6ddfa875ac62a91df7bc889619d309/M365%20resources/image7.png)
 
 *Figure 7: Installing the AD DS role (installation in progress).*
 
@@ -672,7 +672,7 @@ AuditLogs
 
 **Validation.** All four rules are active in Sentinel, and each simulated action produced its corresponding alert. A detection that does not fire on your own simulation is not yet a control.
 
-![Figure 60: Sentinel analytics: all four identity detections active](https://raw.githubusercontent.com/D-rank-developer/M365-Security-Project-cloud-and-on-prem-platform/bff4ed3641371c5945beab34af8e9e4c9cd5d7cb/M365%20resources/image60.png)
+![Figure 60: Sentinel analytics: all four identity detections active](https://github.com/D-rank-developer/M365-Security-Project-cloud-and-on-prem-platform/blob/c012d66fdd6ddfa875ac62a91df7bc889619d309/M365%20resources/image60.png)
 
 *Figure 60: Sentinel analytics: all four identity detections active.*
 
